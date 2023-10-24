@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n        \"title\": \"Libro 1\",\r\n        \"price\": 4700.00,\r\n        \"description\": \"Descripción del Libro 1\",\r\n        \"category\": \"Libros\",\r\n        \"image\": \"imagen1.jpg\",\r\n        \"rating\": {\r\n            \"rate\": 4.50,\r\n            \"count\": 100\r\n        }\r\n    },\r\n    {\r\n        \"title\": \"Libro 2\",\r\n        \"price\": 5599.00,\r\n        \"description\": \"Descripción del Libro 2\",\r\n        \"category\": \"Libros\",\r\n        \"image\": \"imagen2.jpg\",\r\n        \"rating\": {\r\n            \"rate\": 4.00,\r\n            \"count\": 80\r\n        }\r\n    },\r\n    {\r\n        \"title\": \"Libro 3\",\r\n        \"price\": 999.00,\r\n        \"description\": \"Descripción del Libro 3\",\r\n        \"category\": \"Libros\",\r\n        \"image\": \"imagen3.jpg\",\r\n        \"rating\": {\r\n            \"rate\": 4.80,\r\n            \"count\": 120\r\n        }\r\n    }",
+					"raw": "{\r\n        \"title\": \"Libro 4\",\r\n        \"price\": 5600.00,\r\n        \"description\": \"Descripción del Libro 4\",\r\n        \"category\": \"Libros\",\r\n        \"image\": \"imagen4.jpg\",\r\n        \"rating\": {\r\n            \"rate\": 5.00,\r\n            \"count\": 100\r\n        }\r\n    }",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -100,7 +100,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:5000/products?precioMaximo=4500",
+					"raw": "localhost:5000/products?precioMaximo=6000",
 					"host": [
 						"localhost"
 					],
@@ -111,7 +111,7 @@
 					"query": [
 						{
 							"key": "precioMaximo",
-							"value": "4500"
+							"value": "6000"
 						}
 					]
 				}
@@ -124,7 +124,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:5000/products?precioMinimo=1000&precioMaximo=5000",
+					"raw": "localhost:5000/products?precioMinimo=1500&precioMaximo=4800",
 					"host": [
 						"localhost"
 					],
@@ -135,11 +135,11 @@
 					"query": [
 						{
 							"key": "precioMinimo",
-							"value": "1000"
+							"value": "1500"
 						},
 						{
 							"key": "precioMaximo",
-							"value": "5000"
+							"value": "4800"
 						}
 					]
 				}
@@ -172,7 +172,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n        \"title\": \"Libro 1\"\r\n    }",
+					"raw": "{\r\n        \"price\": 3500\r\n    }",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -180,14 +180,14 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:5000/product/1",
+					"raw": "localhost:5000/product/2",
 					"host": [
 						"localhost"
 					],
 					"port": "5000",
 					"path": [
 						"product",
-						"1"
+						"2"
 					]
 				}
 			},
